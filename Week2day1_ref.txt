@@ -1,0 +1,169 @@
+Recap ---Quick Recap
+Prompt Engineering
+LLM API's
+
+Userstory-Chatgpt-Testcases
+
+1)What if 100 user stories converted to Testcases 
+2)Will organization allow to copy /use chatgpt or any chatagents-No
+
+MCP
+
+Playwright MCP
+---Different connectors for Open AI,Claude --
+Jira --MCP
+
+What is prompt ?
+Input to LLM to generate a text, image or video
+
+Base LLM
+Weak Prompt- Generate a Selenium test script.
+
+Instructional LLM
+
+You are a test automation assistant[role]
+
+Generate[Action] a Selenium[tool] Java [Language] language-based test script to verify the login[functionality] on a salesforce [application].
+
+You are a test automation assistant
+Generate  Selenium Java  language-based test script to verify the login on a salesforce
+
+--Prompt Structure and Formulae
+
+ICE-TOP 
+
+Instructions --User input given to llm
+
+You are a test automation assistant
+
+Instructions
+
+-Generate  a selenium Java based test script
+-Verify the login functionality on Salesforce application
+-Use explicit waits instead of thread.sleep() [Include] only elementToBeClickable not others
+-Include setup and teardown method using TestNG
+-All the methods should have proper naming convention
+-Use only XPath for the locators
+-[Mandatory] Generate only 2 testscripts
+
+*Take aways*
+Use always action/verb first
+Use simple english
+Instructions Multistep and unique
+
+Iterative prompting
+
+Context:
+Role
+Background -Domain,what type is application
+
+
+Url,DOM
+
+
+Context(System Prompt)
+You are AI Assistant convert HTML DOM to Selenium code,You are an Expert in CRM application
+
+Instructions
+-Generate ONLY Selenium Java code with TestNG and selenium version 4.x.x
+-Use meaningful name to methods
+-Add meaningful comments for user to understand
+-Follow Locator Strategy
+-Use Only ID when it is unique and donot have numbers
+-Use Name when ID is not present or not unique
+-[Manadatory] Use XPath Preferably relative XPath
+-[Strictly] Do no use CSS
+-[Mandatory]Generate only 2 testcases with Priorites
+-[Critical] Use explict wait no thread.sleep()
+
+<form id="login" method="post" action="/opentaps/control/login;jsessionid=C2CB1E4E393F187F4A632468328E5BDD.jvm1">
+<p class="top">
+          <label for="username">Username</label>
+          <input class="inputLogin" type="text" id="username" name="USERNAME" size="50">
+        </p>
+        <p>
+          <label for="password">Password</label>
+          <input class="inputLogin" type="password" id="password" name="PASSWORD" size="50">
+        </p>
+
+        <p>
+          <input class="decorativeSubmit" type="submit" value="Login">
+        </p>
+      </form>
+
+    
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
